@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/8b00f4755d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="PORTFOLIO" class="logo">
+                <ul id="sidemenu">
+                    <li class="item"><a href="#header">Home</a></li>
+                    <li class="item"><a href="#about">About</a></li>
+                    <li class="item"><a href="#services">Services</a></li>
+                    <li class="item"><a href="#project">Projects</a></li>
+                    <li class="item"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="text">
+                <h1>Hello!<br>I'm <span>Mehroz Ali</span></h1>
+                <p>and I am a Web Developer</p>
+                <a href="logo.png" download="logo.png" class="btn">Download CV</a>
+            </div>
+            <div class="image"></div>
+        </div>
+    </header>
+
+<!-- About -->
+<div id="about">
+    <div class="container2">
+        <div class="row">
+            <div class="col1">
+                <img src="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg">
+            </div>
+            <div class="col2">
+                <h1 class="sub_title1">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae cupiditate, facere quam maxime assumenda quaerat culpa eos aspernatur illo ratione nisi sequi, enim asperiores sed. Quae accusamus recusandae placeat modi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae cupiditate, facere quam maxime assumenda quaerat culpa eos aspernatur illo ratione nisi sequi, enim asperiores sed. Quae accusamus recusandae placeat modi.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Designinig</span><br/>Designing Web interface</li>
+                        <li><span>Web developnment</span><br/>Full stack web developer</li>
+                        <li><span>Ms Office</span><br/>Expert in Ms Office</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Web Designinig</span><br/>Designing Web interface</li>
+                        <li><span>Web developnment</span><br/>Full stack web developer</li>
+                        <li><span>Ms Office</span><br/>Expert in Ms Office</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br/>Bachelor's in Computer Science from Federal urdu University</li>
+                        <li><span>2023</span><br/>MERN Stack Web Developer at Bano Qabil Program</li>
+                        <li><span>2020</span><br/>Intermediate Science from Degree Boys Collage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- SERVICES -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub_title">My Services</h1>
+        <p class="se">Let's build quality products in programming and designs with my sevices.</p>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web <br>Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ipsum non laudantium eius numquam in rerum, qui</p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>Web <br>developnment</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ipsum non laudantium eius numquam in rerum, qui</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Graphic <br>Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ipsum non laudantium eius numquam in rerum, qui</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project -->
+
+<div id="project">
+    <div class="container" >
+        <h1 class="sub_title">Projects</h1>
+        <div class="flex">
+        <div class="items4">
+            <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"/>
+            <div class="layer">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta repellat voluptatem ea ex sequi quo nemo a magni,
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="items4">
+            <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg">
+            <div class="layer">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta repellat voluptatem ea ex sequi quo nemo a magni,
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="items4">
+            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="" srcset="">
+            <div class="layer">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta repellat voluptatem ea ex sequi quo nemo a magni,
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="btnbox">
+    <a href="#" class="btn3">See More</a>
+    </div>
+</div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+<div class="container5">
+    <h1 class="sub_title">Contact Me</h1>
+    <div class="incontainer5">
+        <div class="contact">
+            <label>Name :
+            <input type="text" name="Name" placeholder="  Your Name">
+            </label>
+            <label for="">Email :
+            <input type="email" name="email" placeholder="  Your Email">
+            </label>
+            <label for="">Contact :
+            <input type="tel" name="phoneno" placeholder="  Your Contact No.">
+            </label>
+            <label>Message :
+            <textarea name="message" cols="30" rows="10" placeholder="  Your Message"></textarea>
+            </label>
+        </div>
+        <div class="social">
+            <p id="con">Contact</p>
+            <div class="log"><i class="fa-solid fa-envelope" id="emaillogo"></i><p>mehrozali997@gmail.com</p></div>
+            <div class="log"><i  class="fa-solid fa-phone" id="emaillogo"></i><p> 03162915219</p></div>
+            <div class="logos">
+                <a href="#"><i class="fa-brands fa-facebook-f" id="emaillogo" ></i></a>
+                <a href="#"><i class="fa-brands fa-twitter" id="emaillogo"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" id="emaillogo"></i></a>
+            </div>
+            <div class="submit"><button type="submit">Submit</button></div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

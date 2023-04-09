@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* Header */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 5px 10%;
+}
+.logo{
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+nav ul li a:hover{
+    background-color: brown;
+    border-radius: 20px;
+}
+.text{
+    margin-top: 10%;
+    margin-left: 20px;  
+    font-size: 20px;
+    display: inline-block;
+}
+.text h1{
+    font-size: 60px;
+}
+
+.text span{
+    color: brown;
+}
+.text p{
+    font-weight: bold;
+}
+.btn{
+    top: 20px;
+    padding: 10px 10px;
+    position: relative;
+    border-radius: 30px;
+    background-color: brown;
+    color: white;
+    
+}
+.text a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color:rgb(121, 15, 15) ;
+}
+.image{
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    display: inline-block;
+    left: 57%;
+    background-image: url(pngwing.com.png);
+    background-size: contain ;
+}
+
+/* About */
+.container2{
+    padding: 5px 10%;
+}
+#about{
+    padding: 80px 0;
+    color: black;
+    background-color: rgb(231, 231, 231);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 60%;
+}
+.col2 p{
+    text-align: justify;
+}
+.sub_title1{
+    /* text-align: center; */
+    font-size: 50px;
+    font-weight: 600;
+    color: brown;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+   margin-right: 50px;
+   font-size: 18px;
+   font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: brown;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.tab-contents ul li span{
+    color: brown;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* Services */
+#services{
+    background-color:rgb(14, 14, 14);
+    color: white;
+    padding: 30px 0;
+}
+.sub_title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: brown;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.fa-solid {
+    font-size: 30px;
+    margin: 20px 10px;
+    color: white;
+    font-weight: 500;
+}
+.fa-sharp{
+    font-size: 30px;
+    margin: 20px 10px;
+    color: white;
+    font-weight: 500;
+}
+.services-list div{
+    background-color: rgb(97, 97, 97);
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 300px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.services-list div h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 10px;
+}
+.services-list div p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    
+}
+.services-list div:hover{
+    transform: translateY(-20px);
+    background-color: brown;
+    color: white;
+    transition-duration: 1s;
+    border: none;
+    border-radius: 30px;
+}
+.se{
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* Project */
+#project{
+    background-color:rgb(14, 14, 14);
+    color: white;
+    padding: 30px 0;
+    height: 800px;
+}
+.items4{
+    height: 450px;
+    width: 280px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.items4 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition-duration: 2s;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.layer{
+    color: white;
+    height: 0;
+    width: 100%;
+    background: linear-gradient(rgb(0,0,0,0.6),brown);
+    position: absolute;
+    border-radius: 10px;
+    left:0;
+    bottom: 0;
+    display: flex;
+    overflow: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    z-index: -1;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.layer a i{
+    margin-top:20px ;
+    text-decoration: none;
+    color: brown;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center; 
+}
+.items4:hover img{
+    transform: scale(1.1);
+}
+.items4:hover .layer{
+    height: 100%;
+    z-index: 0;
+
+}
+.btnbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn3{
+    height: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    border: 2px solid brown;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 100px;
+    color: brown;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.4s;
+}
+    
+.btn3:hover{
+    transform: scale(1.1);
+    background-color: brown;
+    border: none;
+    color: white;
+    border-radius: 30px;
+}
+
+/* Contact */
+.container5{
+    height: 95vh;
+    width: 100vw;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.incontainer5{
+    height: 500px;
+    width: 80%;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social{
+    height: 480px;
+    width: 30%;
+}
+.contact{
+    height: 480px;
+    width: 60%;
+}
+.social p{
+    color: white;
+    height: 30px;
+    margin: 10px 10px;
+    display: inline-block;
+}
+.social i , p{
+    margin: 10px;
+}
+#con{
+    margin-top: 50px;
+    font-size: 25px;
+    display: block;
+}
+#emaillogo{
+    font-size: 20px;
+    color: brown;
+    padding: 10px;
+}
+.logos{
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    justify-content: space-between;
+}
+.contact label{
+    color: white;
+    display: block;
+    margin: 50px 20px;
+    font-size: 20px;
+}
+.contact input{
+    width: 80%;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.contact input:focus{
+    border: none;
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+}
+.contact textarea{
+    width: 80%;
+    height: 100px;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.contact textarea:focus{
+    border: none;
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+}
+.logos i:hover{
+    background-color: white;
+    border-radius: 100%;
+}
+/* nav .fa-bars{
+    font-size: 25px;
+    display: none;
+} */
+nav .fa-solid{
+    font-size: 25px;
+    display: none;
+}
+#contact{
+    display: block;
+}
+
+.submit button{
+    height: 50px;
+    width: 100px;
+    background-color: brown;
+    color: white;
+    margin-top: 100px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-10px);
+    background-color: rgb(133, 32, 32);
+}
+
+/* Resposive */
+
+@media only screen and (max-width: 600px){
+    .image{
+        display: none;
+    }
+    .text h1{
+        font-size: 40px;
+    }
+    .text{
+        margin-top: 80%;  
+        font-size: 20px;
+    }
+    nav .fa-solid{
+        display: block;
+    }
+    nav ul{
+        background: brown;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top:50px ;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .sub_title1{
+        font-size: 40px;
+    }
+    .col2{
+        flex-basis: 100%;
+    }
+    .col1{
+        margin-bottom: 30px;
+    }
+    .col2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .sub_title{
+        font-size: 40px;
+    }
+    #project{
+        height: 1800px;
+    }
+    .flex{
+        justify-content: center;
+    }
+    .items4{
+        margin-top: 20px;
+    }
+    .btn3{
+        left: 30%;
+        top: 80px;
+    }
+    .container5{
+        height: 150vh;
+    }
+    .container5 .sub_title{
+        margin: -600px 0;
+    }
+    .incontainer5{
+        display: block;
+        border: none;
+    }
+    .contact input{
+        width: 80vw;
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .contact textarea{
+        width: 80vw;
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    #con{
+        margin-top: 100px;
+    }
+    .log p{
+        margin-top: 20px;
+    }
+    .log{
+        display: flex;
+        align-items: center;
+    }
+    .se{
+        font-size: 13px;
+    }
+    .submit{
+        margin-top: -50px;
+    }
+}
