@@ -110,6 +110,9 @@ nav ul li a:hover{
     width: 100%;
     border-radius: 15px;
 }
+.col2 h1{
+    margin: 10px;
+}
 .col2{
     flex-basis: 60%;
 }
@@ -122,6 +125,7 @@ nav ul li a:hover{
     font-weight: 600;
     color: brown;
 }
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -157,6 +161,7 @@ nav ul li a:hover{
 }
 .tab-contents{
     display: none;
+    margin: 10px;
 }
 .tab-contents.active-tab{
     display: block;
