@@ -324,11 +324,12 @@ nav ul li a:hover{
 }
     
 .btn3:hover{
-    transform: scale(1.1);
     background-color: brown;
+    transform: scale(1.1);
     border: none;
     color: white;
     border-radius: 30px;
+    border: 2px solid brown;
 }
 
 /* Contact */
@@ -471,6 +472,9 @@ button:hover{
         margin-top: 80%;  
         font-size: 20px;
     }
+    .social i, p {
+        margin: 0;
+      }
     nav .fa-solid{
         display: block;
     }
@@ -565,5 +569,8 @@ button:hover{
     }
     .submit{
         margin-top: -50px;
+    }
+    .col2 h1{
+        margin: 0;     
     }
 }
