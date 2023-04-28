@@ -117,7 +117,8 @@ nav ul li a:hover{
     flex-basis: 60%;
 }
 .col2 p{
-    text-align: justify;
+    text-align: left;
+    line-height: 20px;
 }
 .sub_title1{
     /* text-align: center; */
