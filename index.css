@@ -264,7 +264,7 @@ nav ul li a:hover{
     color: white;
     height: 0;
     width: 100%;
-    background: linear-gradient(rgb(0,0,0,0.6),brown);
+    background: linear-gradient(rgb(0,0,0,0.6),#a52a2a);
     position: absolute;
     border-radius: 10px;
     left:0;
